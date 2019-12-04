@@ -1,0 +1,95 @@
+#body{
+	height:100%;
+	width:100%;
+	text-align: center;
+	background-color: black;
+	height:100vh;
+	color:white;
+/*	font-family: "Trebuchet MS", Helvetica, sans-serif*/
+/*	font-family: "Courier New", Courier, monospace;*/
+	font-family: Tahoma, Geneva, sans-serif;	
+}
+
+#container{
+	height:100vh;
+	text-align: center;
+	top:0px;
+	left:0px;
+}
+
+#masthead{
+	width:500px;
+}
+
+#text1{
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+#text2{
+	font-size:.8em;
+	width:60%;
+	margin: auto;
+	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif*/
+}
+
+#smw{
+	opacity:1;
+	font-size: .8em;
+	width:150px;
+	margin:auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+#footer{
+	background-color: white;
+	width:100vw;
+	height:60px;
+	margin-top:auto;
+	margin-bottom:0px;
+	bottom:0px;
+}
+
+
+.social{
+	height:35px;
+	margin-left:5px;
+	margin-top:10px;
+}
+
+#social{
+	width:220px;
+	margin:auto;
+}
+
+.int-links{
+/*	font-family: "Courier New", Courier, monospace;*/
+	font-weight: 600;
+	font-size:1.2;
+	margin:auto
+}
+
+.show-pics{
+	height:100px;
+}
+
+.albums{
+	width:200px;
+}
+
+.title{
+	margin:20px;
+	font-size: 1.7em;
+	color:white;
+}
+
+a{
+	color:#00ffff;
+	text-decoration:none;
+}
+/*#fb, #bc{
+	height:55px;
+}*/
+
+
+
