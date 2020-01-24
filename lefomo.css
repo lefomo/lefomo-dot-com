@@ -3,11 +3,9 @@ body{
 	scroll-padding-top:70px;
 }
 
-
 html{
 	scroll-padding-top:70px;
 }
-
 
 #body{
 	position:relative;
@@ -23,7 +21,7 @@ html{
 	font-weight: 10;
 	letter-spacing: 1px;
 	overflow-x:hidden;
-	margin-left:0px;
+	margin-left:0px
 }
 
 @font-face {
