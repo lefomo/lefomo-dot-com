@@ -1,25 +1,336 @@
+
+body{
+	scroll-padding-top:70px;
+}
+
+
+html{
+	scroll-padding-top:70px;
+}
+
+
 #body{
+	position:relative;
+	min-height:100vh;
 	height:100%;
 	width:100%;
 	text-align: center;
+	align-items: center;
 	background-color: black;
-	height:100vh;
 	color:white;
-/*	font-family: "Trebuchet MS", Helvetica, sans-serif*/
-/*	font-family: "Courier New", Courier, monospace;*/
-	font-family: Tahoma, Geneva, sans-serif;	
+	font-family: Optima, sans-serif;	
+	line-height: 1.4em;
+	font-weight: 10;
+	letter-spacing: 1px;
+	overflow-x:hidden;
+	margin-left:0px;
+}
+
+@font-face {
+    font-family: 'astron_boy';
+    src: url(assets/astron_boy-webfont.woff2) format('woff2'),
+         url(assets/astron_boy-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 #container{
-	height:100vh;
+	position:absolute;
 	text-align: center;
-	top:0px;
-	left:0px;
+	top:0px;	
+	overflow:hidden;
+	padding:50px;
+	padding-left:150px;
+}
+
+.fb-like{
+	top:15px;
+	filter: hue-rotate(-35deg); 
+}
+
+
+.title{
+	margin:35px;
+	margin-top:15px;
+	font-size: 1.7em;
+	font-family: astron_boy;
+	color:rgb(8,247,247);
+	letter-spacing: 3px;
+	text-shadow: 1px 1px #e60000, 2px 2px #e60000, 3px 3px #e60000, 4px 4px #e60000, 5px 5px #e60000, 6px 6px #e60000, 7px 7px #e60000, 8px 8px #e60000;
+	/*9px 9px black,10px 10px black,11px 11px black,12px 12px black,13px 13px black,14px 14px black;*/
+	
+	/*text-shadow:
+   3px 3px 0 red,  
+    0px -0px 0 red,
+    0px 0px 0 #000,
+     0px 0px 0 #000;*/
+}
+
+.sub-title{
+	margin:20px;
+	font-size: 1.7em;
+	font-family: astron_boy;
+	color:rgb(8,247,247);
+	letter-spacing: 3px;
+/*	text-shadow:
+   2px 2px 0 rgb(8,247,247),  
+    0px -0px 0 rgb(8,247,247),
+    0px 0px 0 #000,
+     0px 0px 0 #000;*/
+}
+
+#lfname-side{
+	font-family: astron_boy;
+	color:#0ff;
+	font-size:1.8em;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:-10px;
+	transform:rotate(-24deg);
+}
+
+#lfname-side:hover{
+	font-size:2em;
+	-webkit-animation: text-shadow-pop-top 0.6s both;
+	        animation: text-shadow-pop-top 0.6s both;
+}
+
+#lf-header{
+	top:100px;
+	margin-left:25%;
+	align-items: left;
+	text-align: left;
+	margin-bottom:20px;
+}
+
+#lfname-main{
+	margin:auto;	
+	font-size:3.5em;
+	margin-bottom:25px;
+}
+
+#ethrashpop{
+	margin:auto;
+	margin-left:10px;
+	width:300px;
+	margin-bottom:-20px;
 }
 
 #masthead{
-	width:500px;
+	display:block;
+	margin:auto;
+	margin-bottom:20px;
+	margin-left:45px;
+	width:440px;
+/*	-webkit-filter: drop-shadow(1px 1px 0 red)
+                  drop-shadow(-1px -1px 0 red);
+  	filter: drop-shadow(3px 3px 0 red)
+          drop-shadow(-3px -3px 0 #0ff);*/
+	-webkit-animation: kenburns-bottom 2s ease-out both;
+	        animation: kenburns-bottom 2s ease-out both;
 }
+
+#gfwave{
+	margin:auto;
+	margin-left:30px;	
+	width:410px;
+	filter: drop-shadow (1px 1px 0 black)
+}
+
+#about-title{
+	margin-top:20px;
+	font-size:3em;
+	margin-bottom:10px;
+}
+
+#lf-red{
+  display: none;
+  top:42px;
+  left:27px;
+  position:absolute;
+  z-index:-1;
+  transform:rotate(-19deg);
+
+}
+
+#red-1{
+	width: 0;
+	height: 0;
+	top:3px;
+	left:3px;
+	border-top: 25px solid transparent;
+	border-right: 50px solid red;
+	border-bottom: 25px solid transparent;
+	transform:scale(1.8,.3);
+	z-index:-1;
+	position:absolute;
+
+}
+
+#blue-1{
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #0ff;
+	border-bottom: 25px solid transparent;
+	transform:scale(1.8,.3);
+	z-index:-1;
+	position:absolute;
+
+}
+
+/*.heart {
+  background-color: red;
+  height: 35px;
+  transform: rotate(-70deg);
+  width: 35px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}*/
+
+a{
+	color:white !important;
+	text-decoration:none;
+}
+
+#single-1{
+	display:none;
+	font-family: astron_boy;
+	font-size:1.5em;
+	position:absolute;
+	top:380px;
+	left:60vw;
+	width:170px;
+	z-index: 50;
+}
+
+#btns {
+	position:fixed;
+	top:15px;
+	left:15px;
+	width:100px;
+	margin:20px;
+	z-index: 1
+}
+
+.button{
+	width:85px;
+	height:85px;	
+	margin:3px;
+	/*border:none !important;*/
+	border-radius:100px;
+}
+
+#contact {
+	background: url(assets/btns.png);
+	background-position: -20px -20px;
+	border-width:3px;
+	border-style: dotted;
+	border-color:white;
+}
+
+#contact:hover{
+	background-position: -20px -160px;
+}
+
+#see {
+	background-image: url(assets/btns.png);
+	background-position: -150px -20px;
+	border-width:3px;
+	border-style:dotted;
+	border-color:white;
+}
+
+#see:hover{
+	background-position: -150px -160px;
+}
+
+#hear {
+	background-image: url(assets/btns.png);
+	background-position: -277px -18px;
+	border-width:3px;
+	border-style: dotted;
+	border-color:white;
+}
+
+#hear:hover {
+  background-position: -280px -157px;
+	-webkit-animation: vibrate-2 0.3s linear infinite both;
+	        animation: vibrate-2 0.3s linear infinite both;
+}
+
+
+#shows {
+	background-image: url(assets/btns.png);
+	background-position: 105px -20px;
+	border-width:3px;
+	border-style: dotted;
+	border-color:white;
+}
+
+#shows:hover{
+	background-position: 105px -157px;
+	transform:rotate(30deg);	
+  	/*animation: rotation 1s linear;*/
+}
+
+#social{
+	margin:auto;
+}
+
+.socials{
+	height:17px;
+	margin-left:0px;
+	margin-top:8px;
+	padding:3px;
+	background-color:#0ff;
+	border-radius:30px;
+}
+
+.socials:hover{
+	background-color:red;
+}
+
+
+#insta{
+	border-radius:5px;
+}
+
+#fb{
+	height:18px;
+}
+
+#bc{
+	height:19px;
+}
+
+.sections{
+	margin-top:100px;
+}
+
+
+#reds{
+	position:absolute;
+	top:730px;
+	z-index:-1;
+	left:0px;
+	width:100%;
+	transform:scale(1.4);
+}
+
 
 #text1{
 	font-size: 1.4em;
@@ -27,10 +338,19 @@
 }
 
 #text2{
-	font-size:.8em;
-	width:60%;
+	font-size:.9em;
+	width:70%;
+	line-height: 1.4em;
 	margin: auto;
-	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif*/
+	margin-top:20px;
+	font-weight: 10;
+	letter-spacing: 1px;
+}
+
+.reg-text{
+	color:white !important;
+	margin:auto;
+	width:60%;
 }
 
 #smw{
@@ -41,29 +361,22 @@
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
 
-#footer{
-	background-color: white;
-	width:100vw;
-	height:60px;
-	margin-top:auto;
-	margin-bottom:0px;
-	bottom:0px;
+/*#insta{
+	background-image: url(assets/socials.png);
+	background-position: 0px 0px;	
 }
 
-
-.social{
-	height:35px;
-	margin-left:5px;
-	margin-top:10px;
+#fb{
+	background-image: url(assets/socials.png);
+	background-position: 90px 0px;	
 }
 
-#social{
-	width:220px;
-	margin:auto;
-}
+#bc{
+	background-image: url(assets/socials.png);
+	background-position: 180px 0px;	
+}*/
 
 .int-links{
-/*	font-family: "Courier New", Courier, monospace;*/
 	font-weight: 600;
 	font-size:1.2;
 	margin:auto
@@ -77,19 +390,581 @@
 	width:200px;
 }
 
-.title{
-	margin:20px;
-	font-size: 1.7em;
-	color:white;
+
+#insta-video-block{
+	left:200px;
 }
 
-a{
-	color:#00ffff;
-	text-decoration:none;
+#credit{
+	margin:auto;
+	padding-top:5px;
+	bottom:0px;
+	font-size:.6em;
+	color:black;
+	position: fixed;
+	font-style:italic;
+	background-color:white;
+	width:100%;
+	height:30px;
+	line-height: 1.3em
 }
-/*#fb, #bc{
-	height:55px;
-}*/
 
 
 
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-1-21 12:26:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation vibrate-2
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+.vibrate-2 {
+	-webkit-animation: vibrate-2 0.3s linear infinite both;
+	        animation: vibrate-2 0.3s linear infinite both;
+}
+
+.text-shadow-pop-top {
+	-webkit-animation: text-shadow-pop-top 0.6s both;
+	        animation: text-shadow-pop-top 0.6s both;
+}
+
+.text-shadow-pop-top-mbl {
+	-webkit-animation: text-shadow-pop-top-mbl 0.6s both;
+	        animation: text-shadow-pop-top-mbl 0.6s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-1-21 12:50:3
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-shadow-pop-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-shadow-pop-top {
+  0% {
+    text-shadow: 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    text-shadow:1px 1px #e60000, 2px 2px #e60000, 3px 3px #e60000, 4px 4px #e60000, 5px 5px #e60000, 6px 6px #e60000, 7px 7px #e60000, 8px 8px #e60000;
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+  }
+}
+@keyframes text-shadow-pop-top {
+  0% {
+    text-shadow: 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            transform:rotate(-22deg);   
+  }
+  100% {
+    text-shadow: 1px 1px #e60000, 2px 2px #e60000, 3px 3px #e60000, 4px 4px #e60000, 5px 5px #e60000, 6px 6px #e60000, 7px 7px #e60000, 8px 8px #e60000;
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);  
+            transform:rotate(-22deg);          
+  }
+}
+
+@-webkit-keyframes text-shadow-pop-top-mbl {
+  0% {
+    text-shadow: 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    text-shadow:1px 1px #e60000, 2px 2px #e60000, 3px 3px #e60000, 4px 4px #e60000, 5px 5px #e60000, 6px 6px #e60000, 7px 7px #e60000, 8px 8px #e60000;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+@keyframes text-shadow-pop-top-mbl {
+  0% {
+    text-shadow: 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red, 0 0 red;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+/*            transform:rotate(-22deg);  */ 
+  }
+  100% {
+    text-shadow: 1px 1px #e60000, 2px 2px #e60000, 3px 3px #e60000, 4px 4px #e60000, 5px 5px #e60000, 6px 6px #e60000, 7px 7px #e60000, 8px 8px #e60000;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);  
+/*            transform:rotate(-22deg);   */       
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-1-21 17:46:19
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.1) translateY(-5px);
+            transform: scale(1.1) translateY(-5px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.1) translateY(-5px);
+            transform: scale(1.1) translateY(-5px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+.kenburns-bottom {
+	-webkit-animation: kenburns-bottom 2s ease-out both;
+	        animation: kenburns-bottom 2s ease-out both;
+}
+
+
+#lfname-mbl{
+	display:none;
+}
+
+#navbar-top-mbl{
+	display:none;
+}
+
+#navbar-btm-mbl{
+	display:none;
+}
+
+#insta-2{
+	display:block;
+	border-radius:8px;
+	height:30px;
+	margin:auto;
+	margin-top:15px;
+}
+
+.fb-like .fb_iframe_widget .fb_iframe_widget_fluid{	
+	left:30px;
+}
+
+.section-buffer{
+	height:10px;
+}
+
+
+.pics{
+	display:block;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:30px;
+	height:150px;
+	width:150px;
+	border-width:2px;
+	border-style:dotted;
+	border-color:#0ff;
+	border-radius: 200px;
+	padding:5px;
+	box-shadow: 0 0 1px 1px purple, 0 0 2px 2px purple, 0 0 3px 3px purple, 0 0 4px 4px purple, 0 0 5px 5px purple, 0 0 6px 6px purple, 0 0 7px 7px purple, 0 0 8px 8px purple;
+	
+}
+
+#pin{
+	background-image:url(assets/pins.jpg);
+	background-position: -30px 0px;
+	height:150px;
+	width:150px;
+}
+
+#merch-title{
+	margin-top:40px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#container{		
+		margin:0px;				
+		padding:0px;
+		left:0px;			
+		width:100%;
+		overflow-y: scroll;
+		top:70px;
+		bottom:100px;
+			
+	}
+
+	#lf-header{
+		display:inline-block;
+		margin:20px;
+		margin-top:7px;
+		width:auto;		
+	}
+
+	#masthead{
+		display:inline-block;
+		max-width:90%;
+	}
+
+	#ethrashpop{		
+		max-width:70%;
+	}
+
+	#gfwave{	
+		max-width:70%;
+		margin-left:5px;
+	}
+
+	#reds{
+		position:fixed;
+		top:160px;
+		margin-top:0px;
+		transform:scale(1.1);
+	}
+
+	#text2{
+		width:70%;
+		font-size:.8em;
+	}
+
+
+	.instagram-media{
+		width:85% !important;
+		transform:scale(.75);
+		margin:0px 0px -80px !important;
+		padding:0px;
+	}
+
+	#videos-title{
+		margin-bottom:-10px;
+	}
+
+	.youtubes{
+		margin-top:15px;
+		transform:scale(.7);
+		width:100%;
+	}
+
+	#sagan{
+		margin-top:-75px;
+	}
+
+
+	.albums{
+		transform:scale(.8);
+		margin:-30px;
+	}
+
+	#debut{
+		margin-top:-50px;
+	}
+
+	.inline_player{
+		width:100px;
+	}
+
+	#lfname-main{
+		display:none;
+	}
+
+	.section-buffer{
+		height:10px;
+	}
+
+	#navbar-top-mbl{	
+		display:block;	
+		position:fixed;		
+		background-color:black;
+		border-color:red;
+		border-width: 0 0 2px;
+		border-style:dashed;
+		top:0;
+		width:100%;		
+		height:65px;
+		padding:2px;
+		padding-bottom: 5px;
+		overflow:hidden;
+		z-index:1;
+	}
+
+	#lfname-mbl{
+		display:inline;
+		font-family: astron_boy;
+		color:#0ff;
+		margin-top:25px;
+		position:absolute;
+		font-size:2.7em;
+		top:3px;
+		left:25px;
+		width:auto;
+		max-width:170px;
+	}
+
+	#lfname-mbl:hover{
+		-webkit-animation: text-shadow-pop-top-mbl 0.6s both;
+		        animation: text-shadow-pop-top-mbl 0.6s both;		        
+	}
+
+	#social{
+		position:absolute;
+		margin-top:7px;	
+		margin-right:-30px;
+		right:0px;
+		height:30px;
+		width:250px;
+	}
+
+	.socials{
+		margin:3px;
+		margin-top:15px;
+		width:25px;
+		height:25px;
+	}
+
+	#insta{
+		left:0px;
+	}
+
+	.fb-like{
+		top: 10px;
+		margin-bottom:25px;
+/*		right:-163px;*/
+	}
+
+	#fb{
+		right:0px;
+		width:25px;
+		height:25px;
+	}
+
+	#bc{
+		width:25px;
+		height:25px;
+	}
+
+	#insta-2{
+		margin-top:20px;
+		margin-bottom:5px;
+		border-radius:5px;
+		width:30px;
+		height:30px;
+	}
+	
+	#navbar-btm-mbl{
+		display:inline-block;
+		position:fixed;		
+		bottom:0;
+		width:100%;
+		max-width:100%;
+		height:80px;
+		padding:10px;
+		margin-left:5px;
+		margin-right:5px;
+		margin-bottom:1px;
+		text-align:center;
+		overflow:hidden;
+		z-index:1;
+		left:-15px;
+	}
+
+	#lfname-side{
+		display:none;
+	}
+
+	#btns-mbl{					
+		margin-top:5px;
+		margin-bottom:5px;
+		overflow: hidden;		
+	}
+
+	#btns{
+		display:none;
+	}
+
+	.button{
+		height:65px;
+		width:65px;
+		margin:5px;
+		margin-bottom:5px; 
+	}
+
+	#contact {
+		background-position: -29px -28px;
+		border-width:2px;
+	}
+
+	#contact:hover{
+		background-position: -29px -165px;
+	}
+
+	#see {
+		background-image: url(assets/btns.png);
+		background-position: -160px -22px;
+		border-width:2px;
+		border-style:dashed;
+		border-color:white;
+	}
+
+	#see:hover{
+		background-position: -160px -160px;
+	}
+
+	#hear {
+		background-position: -286px -27px;
+		border-width:2px;
+	}
+
+	#hear:hover {
+	  background-position: -289px -166px;
+		-webkit-animation: vibrate-2 0.3s linear infinite both;
+		        animation: vibrate-2 0.3s linear infinite both;
+	}
+
+
+	#shows {
+		background-image: url(assets/btns.png);
+		background-position: 95px -28px;
+		border-width:2px;
+	}
+
+	#shows:hover{
+		background-position: 95px -166px;
+		transform:rotate(30deg);	
+	  	/*animation: rotation 1s linear;*/
+	}
+
+	#shows-intro{
+		font-size:.8em;
+	}
+
+	#past-shows-list{
+		font-size:.8em;
+	}
+
+/*	.pics{
+		display:block;
+		margin:auto;
+		margin-top:20px;
+		margin-bottom:20px;
+		height:150px;
+		width:150px;
+		border-width:1px;
+		border-style:dashed;
+		border-color:red;
+		border-radius: 200px;
+		padding:5px;
+	}
+
+	#pin{
+		background-image:url(assets/pins.jpg);
+		background-position: 0px 0px;
+		height:200px;
+		width:200px;
+		transform:scale(.69);
+		margin-bottom:-30px;
+		padding:20px;
+		border-color: red;
+		border-width:2px;
+	}*/
+
+	#credit{
+		display: none
+	}
+
+
+
+
+}
